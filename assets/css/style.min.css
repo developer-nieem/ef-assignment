@@ -6,10 +6,11 @@
 .header-part {
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
           clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
-  background: url("https://images.unsplash.com/photo-1509347528160-9a9e33742cdb");
+  background: url("https://images.unsplash.com/photo-1509347528160-9a9e33742cdb"), rgba(0, 0, 0, 0.3647058824);
   background-size: cover;
   background-position: center center;
   height: 100vh;
+  background-blend-mode: multiply;
 }
 .header-part .container {
   width: 1200px;
@@ -75,4 +76,31 @@
 .header-part .container .profile-part i {
   margin: 0 10px;
   font-size: 22px;
+}
+.header-part .container .banner-part {
+  padding-top: 150px;
+}
+.header-part .container .banner-part .btn-days {
+  padding: 10px;
+  background-color: rgba(65, 63, 63, 0.662745098);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+.header-part .container .banner-part h2 {
+  font-size: 46px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.header-part .container .banner-part .btn-percent {
+  padding: 10px;
+  background-color: rgba(128, 189, 16, 0.9921568627);
+  color: #fff;
+  border: none;
+  border-radius: 6px 20px 6px 6px;
+}
+.header-part .container .banner-part span {
+  font-size: 26px;
+  margin-left: 20px;
 }/*# sourceMappingURL=style.min.css.map */
