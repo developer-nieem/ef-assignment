@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
+}/*# sourceMappingURL=style.min.css.map */
