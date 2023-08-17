@@ -3,7 +3,17 @@
   padding: 0;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  color: aqua;
+  padding-top: 10px;
+}
+
 .header-part {
+  background: #1f1e1e;
+}
+.header-part .header-shape {
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
           clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
   background: url("https://images.unsplash.com/photo-1509347528160-9a9e33742cdb"), rgba(0, 0, 0, 0.3647058824);
@@ -11,12 +21,6 @@
   background-position: center center;
   height: 100vh;
   background-blend-mode: multiply;
-}
-.header-part .container {
-  width: 1200px;
-  margin: 0 auto;
-  color: aqua;
-  padding-top: 10px;
 }
 .header-part .container .nav-menu {
   display: grid;
@@ -98,9 +102,54 @@
   background-color: rgba(128, 189, 16, 0.9921568627);
   color: #fff;
   border: none;
-  border-radius: 6px 20px 6px 6px;
+  -webkit-clip-path: polygon(0 0, 80% 0, 99% 100%, 0% 100%);
+          clip-path: polygon(0 0, 80% 0, 99% 100%, 0% 100%);
+  border-radius: 5px;
 }
 .header-part .container .banner-part span {
   font-size: 26px;
   margin-left: 20px;
+}
+
+.trending {
+  background: #1f1e1e;
+}
+.trending .trending-header {
+  display: flex;
+  justify-content: space-between;
+}
+.trending .trending-header button {
+  padding: 10px;
+  background-color: #0f0f0f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+.trending .tranding-items {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 50px;
+}
+.trending .tranding-items img {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: -40px;
+}
+.trending .tranding-items button {
+  padding: 10px;
+  background-color: rgba(128, 189, 16, 0.9921568627);
+  color: #fff;
+  border: none;
+  -webkit-clip-path: polygon(0 0, 80% 0, 99% 100%, 0% 100%);
+          clip-path: polygon(0 0, 80% 0, 99% 100%, 0% 100%);
+  border-radius: 5px;
+}
+.trending .tranding-items .items-names {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.min.css.map */

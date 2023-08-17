@@ -3,19 +3,25 @@
     padding: 0;
 
 }
-
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    color: aqua;
+    padding-top: 10px;
+}
 .header-part{
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
-    background: url('https://images.unsplash.com/photo-1509347528160-9a9e33742cdb'), #0000005d;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-    background-blend-mode: multiply;
+    .header-shape{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
+        background: url('https://images.unsplash.com/photo-1509347528160-9a9e33742cdb'), #0000005d;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        background-blend-mode: multiply;
+    }
+   
+    background: #1f1e1e;
     .container{
-        width: 1200px;
-        margin: 0 auto;
-        color: aqua;
-        padding-top: 10px;
+       
         .nav-menu{
             display: grid;
             grid-template-columns:1fr 2fr 1fr;;
@@ -113,7 +119,8 @@
                 background-color: #80bd10fd;
                 color: #fff;
                 border: none;
-                border-radius: 6px 20px 6px 6px;
+                clip-path: polygon(0 0, 80% 0, 99% 100%, 0% 100%);
+                border-radius: 5px;
             
         }
         span{
@@ -122,4 +129,50 @@
         }
         }
     }
+}
+
+.trending{
+    background: #1f1e1e;
+    .trending-header{
+        display: flex;
+        justify-content: space-between;
+
+        button{
+            padding: 10px;
+            background-color: #0f0f0f;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+    }
+
+    .tranding-items{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding-bottom: 50px;
+        img{
+            height: 300px;
+            width: 100%;
+            border-radius: 10px ;
+            margin-bottom: -40px;
+        }
+        button{
+            padding: 10px;
+            background-color: #80bd10fd;
+            color: #fff;
+            border: none;
+            clip-path: polygon(0 0, 80% 0, 99% 100%, 0% 100%);
+            border-radius: 5px;
+            
+        }
+        .items-names{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
 }
