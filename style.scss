@@ -4,6 +4,89 @@
 
 }
 
-.container{
+.header-part{
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
+    background: url('https://images.unsplash.com/photo-1509347528160-9a9e33742cdb');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+        color: aqua;
+        padding-top: 10px;
+        .nav-menu{
+            display: grid;
+            grid-template-columns:1fr 2fr 1fr;;
+
+            h3{
+                font-size: 36px;
+                color: #fff;
+            }
+            .top{
+                ul{
+                    text-align: center;
+                    li{
+                        display: inline;
+                        padding: 5px;
+                        a{
+                            text-decoration: none;
+                            color: aqua;
+                        }
+                    }
+                }
+            }
+
+            .main-nav{
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+
+                ul{
+                    text-align: center;
+                    padding: 10px;
+                    background: linear-gradient(90deg, rgba(14,17,20,1) 0%, rgba(27,32,36,1) 100%, rgba(9,9,121,1) 100%);
+                    border-radius: 50px;
+                    
+                    justify-content: space-between;
+                    width: 65%;
+                    margin: 0 auto;
+                    li{
+                        display: inline;
+                        padding: 5px;
+                        a{
+                            text-decoration: none;
+                            color: aqua;
+                            padding: 2px;
+                            i{
+                                padding: 0px 2px;
+                            }
+                        }
+                    }
+                    
+                    }
+
+                    .search-btn{
+                        button{
+                            padding: 12px;
+                            background: #4ad409;
+                            border-radius: 100%;
+                            margin-left: -122px;
+                            border: none;
+                        }
+                   
+                }
+
+            }
+        }
+
+        .profile-part{
+
+            text-align: right;
+            i{
+                margin: 0 10px;
+                font-size: 22px;
+            }
+        }
+    }
 }
