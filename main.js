@@ -17,3 +17,24 @@ megaMenuItems.forEach( item=> {
 })
 
 
+//  document.querySelectorAll('.searchBtn').addEventListener('click', function(){
+//     console.log('srcbtn');
+// })
+
+const searchBtn = document.getElementById('searchBtn');
+console.log(searchBtn);
+searchBtn.addEventListener('click', function() {
+    const navMenu = document.querySelector('.main-nav');
+    const searchBox = document.querySelector('.search-part');
+    navMenu.style.display = 'none'
+    searchBox.style.display = 'block'
+    
+  });
+
+  const searchClose = document.getElementById('close-btn');
+  searchClose.addEventListener('click' , function(){
+    const navMenu = document.querySelector('.main-nav');
+    const searchBox = document.querySelector('.search-part');
+    navMenu.style.display = 'flex'
+    searchBox.style.display = 'none'
+  })

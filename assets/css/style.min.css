@@ -114,6 +114,31 @@
   border-radius: 100%;
   margin-left: -122px;
   border: none;
+  cursor: pointer;
+}
+.header-part .container .nav-menu .search-part {
+  display: none;
+}
+.header-part .container .nav-menu .search-part .search-box {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.header-part .container .nav-menu .search-part .search-box .search-input {
+  width: 80%;
+}
+.header-part .container .nav-menu .search-part .search-box .search-input input {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 50px;
+}
+.header-part .container .nav-menu .search-part .search-box .search-btn button {
+  padding: 12px;
+  background: #4ad409;
+  border-radius: 100%;
+  cursor: pointer;
+  border: none;
 }
 .header-part .container .profile-part {
   text-align: right;

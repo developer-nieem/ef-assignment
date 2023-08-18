@@ -54,7 +54,7 @@
                     padding: 10px;
                     background: linear-gradient(90deg, rgba(14,17,20,1) 0%, rgba(27,32,36,1) 100%, rgba(9,9,121,1) 100%);
                     border-radius: 50px;
-                    
+                   
                     justify-content: space-between;
                     width: 65%;
                     margin: 0 auto;
@@ -122,8 +122,10 @@
                           
                     }
                     
-                    }
 
+                   
+                    }
+                    
                     .search-btn{
                         button{
                             padding: 12px;
@@ -131,11 +133,40 @@
                             border-radius: 100%;
                             margin-left: -122px;
                             border: none;
+                            cursor: pointer;
                         }
                    
                 }
 
             }
+            .search-part{
+                display: none;
+                .search-box{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    .search-input{
+                        width: 80%;
+                        input{
+                            width: 100%;
+                            padding: 20px;
+                            border: none;
+                            border-radius: 50px;
+                        }
+                    }
+                    .search-btn{
+                        button{
+                            padding: 12px;
+                            background: #4ad409;
+                            border-radius: 100%;
+                            cursor: pointer;
+                            border: none;
+                        }
+                   
+                }
+                }
+            }
+            
         }
 
         .profile-part{
