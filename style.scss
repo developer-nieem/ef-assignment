@@ -49,7 +49,7 @@
                 display: flex;
                 align-items: center;
 
-                ul{
+                .main-menu-items{
                     text-align: center;
                     padding: 10px;
                     background: linear-gradient(90deg, rgba(14,17,20,1) 0%, rgba(27,32,36,1) 100%, rgba(9,9,121,1) 100%);
@@ -58,6 +58,12 @@
                     justify-content: space-between;
                     width: 65%;
                     margin: 0 auto;
+                    .active {
+                        a{
+                            color: #ffffff;
+                        }
+                         
+                      }
                     li{
                         display: inline;
                         padding: 5px;
@@ -68,7 +74,52 @@
                             i{
                                 padding: 0px 2px;
                             }
+                            position: relative;
                         }
+                        .mega-menu{
+                            background: linear-gradient(90deg, rgba(47,63,69,1) 0%, rgba(118,114,104,0.8995973389355743) 100%);
+                            border-radius: 8px;
+                            padding: 10px;
+                            margin-top: 30px;
+                            position: absolute;
+                            display: none;
+                            
+                            .mega-menu-heading{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                button{
+                                    padding: 10px;
+                                    background-color: #0f0f0f;
+                                    color: #fff;
+                                    border: none;
+                                    border-radius: 4px;
+                                }   
+                            }
+                            .megamenu-items{
+                              
+                                ul{
+                                    padding-top: 20px;
+                                    padding-bottom: 20px;
+                                     text-align: left;
+                                    li{
+                                      
+                                        padding: 8px 15px;
+                                            &:hover{
+                                                color: red;
+                                                background: #666E6B;
+                                                padding: 8px 15px;
+                                                border-radius: 50px;
+                                            }
+                                       
+                                    }
+                                }
+                            }
+                        }
+                        .show {
+                            display: block;
+                          }
+                          
                     }
                     
                     }
